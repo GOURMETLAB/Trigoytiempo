@@ -346,6 +346,10 @@ body {
   line-height: 1.6;
   margin-bottom: 0.8rem;
 }
+@media (max-width: 768px){
+ .contacto{ padding: 10px 2rem;
+}
+}
 
 .datos {
   font-weight: 700;
