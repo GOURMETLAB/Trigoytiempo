@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bolleria | Trigo & Tiempo</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="shortcut icon" href="../img/Group 309 (1).png" type="image/x-icon">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Life+Savers:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body> <!-- HERO -->
+  <section class="hero" id="inicio">
+    <img src="../img/hero3.png" alt="Bollería artesanal">
+  </section>
+
+  <!-- HEADER -->
+   <header class="header">
+  <div class="container">
+    <div class="logo">
+      <img src="../img/Logo.png" alt="Trigo & Tiempo">
+    </div>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="/index.html">INICIO</a></li>
+        <li><a href="../page/nosotros.html">NOSOTROS</a></li>
+        <li><a href="../page/bolleria.html">BOLLERÍA</a></li>
+        <li><a href="https://www.canva.com/design/DAGoGmaUZRw/T9DUHROatX5WTRg2BceRuw/view?utm_content=DAGoGmaUZRw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h687031fd10">VER CARTA</a></li>
+        <li><a href="../page/contacto.html">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<section class="seccion-bolleria">
+   <div class="galeria-intro">
+  <h2>Bollería artesanal</h2>
+  <p>
+    Elaboramos cada pieza con fermentaciones lentas, manteca de calidad y harinas nobles.
+    Nuestra bollería es el resultado del tiempo, la paciencia y el deseo de transformar cada pausa en un momento especial.
+  </p>
+</div>
+<section class="galeria-bolleria">
+  <div class="producto">
+    <div class="producto-img">
+      <img src="../img/Bolleria/IMG_2110.png" alt="Danesa" class="img-normal">
+      <img src="../img/Bolleria/IMG_2073.png" alt="Danesa textura" class="img-hover">
+    </div>
+    <h3>Danesa</h3>
+    <button class="btn-vermas" onclick="alternarDescripcion(this)">Ver más</button>
+    <p class="descripcion">Nuestra clásica danesa con masa hojaldrada, corazón de crema pastelera y toque cítrico.</p>
+  </div>
+  <div class="producto">
+    <div class="producto-img">
+      <img src="../img/Bolleria/IMG_2521 (1).png" alt="pan de CHOCOLATE" class="img-normal">
+      <img src="../img/Bolleria/IMG_2521.png" alt="pan textura" class="img-hover">
+    </div>
+    <h3>Pain au chocolat</h3>
+    <button class="btn-vermas" onclick="alternarDescripcion(this)">Ver más</button>
+    <p class="descripcion">Crujiente por fuera, con barras de chocolate fundido adentro. Ideal para los que no pueden elegir entre bollería y chocolate.</p>
+  </div>
+   <div class="producto">
+    <div class="producto-img">
+      <img src="../img/Bolleria/IMG_1245 (2) (1).png" alt="Roll de Canela" class="img-normal">
+      <img src="../img/Bolleria/IMG_2073 (1).png" alt="Roll textura" class="img-hover">
+    </div>
+    <h3>Roll de Canela</h3>
+    <button class="btn-vermas" onclick="alternarDescripcion(this)">Ver más</button>
+    <p class="descripcion">Masa suave con canela molida y fermentación lenta. Ideal para una pausa cálida.</p>
+  </div>
+
+  <div class="producto">
+    <div class="producto-img">
+      <img src="../img/Bolleria/IMG_3466 (1).png" alt="Cronix" class="img-normal">
+      <img src="../img/Bolleria/IMG_3481.png" alt="Cronix textura" class="img-hover">
+    </div>
+    <h3>Cronix</h3>
+    <button class="btn-vermas" onclick="alternarDescripcion(this)">Ver más</button>
+    <p class="descripcion">Croissant salado relleno de lomito ahumado y gruyere. Potente, tierno y crocante. Una bomba perfecta para quienes buscan algo salado.</p>
+  </div>
+
+   <div class="producto">
+    <div class="producto-img">
+      <img src="../img/Bolleria/IMG_1034.png" alt="croissant" class="img-normal">
+      <img src="../img/Bolleria/IMG_1165.png" alt="croissant textura" class="img-hover">
+    </div>
+    <h3>croissant</h3>
+    <button class="btn-vermas" onclick="alternarDescripcion(this)">Ver más</button>
+    <p class="descripcion">Hojaldrado, dorado, crujiente por fuera y tierno por dentro. El ícono de la panadería francesa, hecho con manteca real.</p>
+  </div>
+
+   <div class="producto">
+    <div class="producto-img">
+      <img src="../img/Bolleria/IMG_1002 (1).jpg" alt="chipa" class="img-normal">
+      <img src="../img/Bolleria/gggggg.png" alt="chipa textura" class="img-hover">
+    </div>
+    <h3>Chipá</h3>
+    <button class="btn-vermas" onclick="alternarDescripcion(this)">Ver más</button>
+    <p class="descripcion">Bocados de mandioca y queso fundido. Crocantes por fuera, elásticos por dentro. Sabrosos, ligeros y 100% tentadores.</p>
+  </div>
+</section>
+  <!-- Repetir .producto para cada ítem -->
+</section>
+</section>
+
+  <footer class="footer">
+  <div class="footer-container">
+    <img src="../img/Group 309 (1).png" alt="">
+    <p>Trigo & Tiempo – Hecho con paciencia, pan y poesía.</p>
+    <p class="copyright">© 2025 Trigo & Tiempo. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script>
+function alternarDescripcion(boton) {
+  const producto = boton.closest('.producto');
+  const normal = producto.querySelector('.img-normal');
+  const hover = producto.querySelector('.img-hover');
+  const descripcion = producto.querySelector('.descripcion');
+
+  const mostrando = descripcion.style.display === 'block';
+
+  if (mostrando) {
+    normal.style.opacity = "1";
+    hover.style.opacity = "0";
+    descripcion.style.display = "none";
+    boton.textContent = "Ver más";
+  } else {
+    normal.style.opacity = "0";
+    hover.style.opacity = "1";
+    descripcion.style.display = "block";
+    boton.textContent = "Ver menos";
+  }
+}
+</script>
+<script>
+function toggleMenu() {
+  const nav = document.querySelector('.nav');
+  const container = document.querySelector('.header .container');
+
+  nav.classList.toggle('show');
+
+  if (nav.classList.contains('show')) {
+    container.style.borderRadius = '16px 16px 0 0';
+  } else {
+    container.style.borderRadius = '16px';
+  }
+}
+
+
+</script>
+
+</body>
+</html>

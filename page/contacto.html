@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Trigo & Tiempo</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="shortcut icon" href="../img/Group 309 (1).png" type="image/x-icon">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Life+Savers:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body> <!-- HERO -->
+  <section class="hero" id="inicio">
+    <img src="../img/hero.png" alt="Bollería artesanal">
+  </section>
+
+  <!-- HEADER -->
+   <header class="header">
+  <div class="container">
+    <div class="logo">
+      <img src="../img/Logo.png" alt="Trigo & Tiempo">
+    </div>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="/index.html">INICIO</a></li>
+        <li><a href="../page/nosotros.html">NOSOTROS</a></li>
+        <li><a href="../page/bolleria.html">BOLLERÍA</a></li>
+        <li><a href="https://www.canva.com/design/DAGoGmaUZRw/T9DUHROatX5WTRg2BceRuw/view?utm_content=DAGoGmaUZRw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h687031fd10">VER CARTA</a></li>
+        <li><a href="../page/contacto.html">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="contacto" id="contacto">
+  <div class="contacto-container">
+    <div class="contacto-texto">
+      <h2>Te esperamos</h2>
+      <p>Nos encontramos en <strong>Belgrano 179, Neuquén</strong>.</p>
+      <p><strong>Horarios de atención:</strong><br>
+Lunes a sábado de 8:00 a 20:00 hs</p>
+
+      <p>También podés pedir a través de <strong>PedidosYa</strong> o escribirnos directo por WhatsApp.</p>
+      <p class="datos">
+        ☎️ 299-0000000<br>
+        📍 @trigoytiemponeuquen
+      </p>
+      <a href="https://wa.me/5492990000000" class="btn-secundario">Escribinos por WhatsApp</a>
+    </div>
+    <div class="contacto-mapa">
+      <img src="../img/Recurso 2.png" alt="Mapa Trigo & Tiempo">
+    </div>
+    <a href="https://www.google.com/maps/place/Belgrano+179,+Neuqu%C3%A9n" 
+   class="btn-secundario" target="_blank" rel="noopener noreferrer">
+  Abrir en Google Maps
+</a>
+  </div>
+</section>
+
+  
+  <footer class="footer">
+  <div class="footer-container">
+    <img src="../img/Group 309 (1).png" alt="">
+    <p>Trigo & Tiempo – Hecho con paciencia, pan y poesía.</p>
+    <p class="copyright">© 2025 Trigo & Tiempo. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script>
+function toggleMenu() {
+  const nav = document.querySelector('.nav');
+  const container = document.querySelector('.header .container');
+
+  nav.classList.toggle('show');
+
+  if (nav.classList.contains('show')) {
+    container.style.borderRadius = '16px 16px 0 0';
+  } else {
+    container.style.borderRadius = '16px';
+  }
+}
+
+
+</script>
+</body>
+</html>
