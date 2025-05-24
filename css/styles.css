@@ -202,7 +202,7 @@ body {
 }
 .hechos {
   background-color: var(--verde-claro);
-  padding: 5rem 2rem;
+  padding: 30px 0px;
   color: var(--text-blanco);
 }
 
@@ -213,14 +213,12 @@ body {
   gap: 3rem;
   max-width: 1150px;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 0;
 }
 
 .hechos-imagen img {
   width: 100%;
   max-width: 500px;
-  border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
 
 .hechos-texto {
@@ -317,7 +315,7 @@ body {
   max-width: 1150px;
   margin: 0 auto;
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
